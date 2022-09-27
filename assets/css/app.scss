@@ -1,0 +1,203 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// https://www.redditstatic.com/desktop2x/fonts/IBMPlexSans/Medium-1051a531d3e1ee3483a6533158557139-font.woff
+
+// Variables
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "IBMPlexSans", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "IBMPlexSans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/font/implex/regular.woff2") format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+body {
+    background: #dae0e6;
+}
+
+.header {
+    height: 48px;
+    background: white;
+    padding: 0 20px;
+}
+
+.header svg {
+    height: 32px;
+    display: inline-block;
+    margin: 8px 8px 8px 0;
+}
+
+.header svg:nth-of-type(2) {
+    height: 18px;
+}
+
+.content-container {
+    width: 100%;
+    min-height: 90vh;
+    // padding: 10px;
+}
+
+.content {
+    // max-width: 640px;
+    // margin: 10px auto;
+}
+
+.rcard input {
+    background: #dae0e6;
+    padding: 3px;
+}
+
+.rcard {
+    border: 1px solid white;
+    transition: border 0.1s linear;
+    &:hover {
+        border: 1px solid rgb(137, 137, 137);
+    }
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    .top {
+        white-space: nowrap;
+
+        display: block;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        .score {
+            display: inline-block;
+            padding-right: 10px;
+            color: rgb(135, 138, 140);
+            font-weight: bold;
+            font-size: 16px;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .title {
+            display: inline-block;
+            white-space: normal;
+            max-width: 90%;
+
+            @media only screen and (max-width: 600px) {
+                max-width: 80%;
+            }
+        }
+    }
+
+    pre {
+        white-space: pre-wrap;
+    }
+    .comments {
+        padding-left: 50px;
+        color: rgb(135, 138, 140);
+        font-weight: bold;
+    }
+}
+
+.rcard h3 {
+    color: rgb(34, 34, 34);
+    font-family: "IBMPlexSans, Arial, sans-serif";
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 22px;
+    font-stretch: 100%;
+    overflow-wrap: break-word;
+    text-decoration-thickness: auto;
+    vertical-align: baseline;
+    word-break: break-word;
+    margin: 5px 0 10px 0;
+    font-weight: bold;
+}
+
+.rcard img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+.rcard .selfpost {
+    word-break: break-word;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 50px;
+}
+
+.rcard video {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subheader {
+    background: white;
+}
+
+.subheader--content {
+    position: relative;
+    // max-width: 640px;
+    // margin: 0 auto;
+}
+
+.karenimg {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    border-radius: 100%;
+    border: 4px solid #fff;
+
+    background: url("data:image/jpeg;base64,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");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 176px;
+    background: #33a8ff;
+}
+
+.subheadercontainer {
+    padding-left: 90px;
+    vertical-align: baseline;
+
+    h1 {
+        color: rgb(28, 28, 28);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32px;
+        padding-bottom: 4px;
+        padding-right: 2px;
+        margin-bottom: 0;
+    }
+
+    h5 {
+        color: rgb(124, 124, 124);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+    }
+}
